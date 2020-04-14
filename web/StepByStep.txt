@@ -1,0 +1,197 @@
+--INICIANDO APLICAÇÃO
+  ->yarn create react-app web
+    ->Limpar o projeto
+
+--CONFIGURANDO ESLINT E PRETTIER
+  ->Criar '.editorconfig'
+  ->yarn add eslint -D
+    ->yarn eslint --init
+      ->Excluir 'packge-lock.json' e executar comando 'yarn'
+      ->Criar arquivo '.eslintrc'
+      ->Instalar plugins:
+          ->yarn add prettier eslint-config-prettier eslint-plugin-prettier
+            babel-eslint -D
+      ->Criar arquivo '.prettierrc"
+
+--Configurando rotas
+  ->yarn add react-router-dom
+    ->Criar pasta 'pages' em 'src'
+    ->Criar pasta 'routes' em 'src'
+      ->'index.js'
+    ->Criar pasta 'services' em 'src'
+      ->yarn add history
+        ->'history.js'
+    ->Criar rotas privadas:
+      ->yarn add prop-types
+      ->Criar arquivo 'Route.js' em 'routes'
+
+
+--Criando as páginas da aplicação
+  ->Lista de páginas: {
+    -SigIn
+    -OrdersList
+    -DeliverymenList
+    -RecipientsList
+    -ProblemsList
+    -DeliverymenForm
+    -RecipientsForm
+    -OrdersForm
+    -DeliverymenEdit
+    -RecipientsEdit
+    -OrdersEdit
+  }
+
+  ->Criar as pastas referentes a cada página da aplicação:
+    ->Criar pasta 'SigIn'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'OrdersList'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'DeliverymenList'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'RecipientsList'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'ProblemsList'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'DeliverymenForm'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'RecipientsForm'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'OrdersForm'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'DeliverymenEdit'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'RecipientsEdit'
+      ->'index.js'
+      ->'stryles.js'
+    ->Criar pasta 'OrdersEdit'
+      ->'index.js'
+      ->'stryles.js'
+
+--Criando as rotas
+  ->Importar rotas no 'rotes/index.js'
+  ->Importar Routes e history no 'App.js'
+
+--Instalando ReactotoTron
+  ->yarn add reactotron-react-js
+    ->Criart pasta 'config' em 'src'
+      ->Criar arquivo 'ReactotronConfig.js'
+        ->Importar arquivo em 'App.js'
+
+--Criand layouts de páginas
+  ->yarn add styled-components
+  ->Criar pasta '_layout' em 'pages'
+    ->
+    ->Criar pasta 'default'
+      ->'index.js' e 'styles.js'
+    ->Criar pasta 'auth'
+      ->'index.js' e 'styles.js'
+
+--Criando estilos globais
+  ->Criar pasta 'styles' em 'src'
+    ->'Global.js'
+    ->Importar 'GLobal.js' em 'App.js'
+
+--Utilizando Root Import
+  ->yarn add customize-cra react-app-rewired -D
+    ->Criar arquivo 'config-overrides.js' na raiz
+  ->yarn add babel-plugin-root-import -D
+  ->Alterar 'scripts' no 'package.json'
+  ->Configrar '.eslintrc'
+  ->yarn add eslint-import-resolver-babel-plugin-root-import -D
+  ->Criar arquivo 'jsconfig.json' na raiz
+
+--CRIANDO ESTILIZAÇÕES
+
+--Estilização da Autenticação
+  ->Criar pasta 'assets' em 'src'
+    ->Baixar imagens de logo
+    ->Configurar 'SigIn/index.js'
+    ->Configurar '_layouts/auth/styles.js'
+      ->yarn add polished
+
+--Utilizar Unform
+  ->yarn add @rocketseat/unform
+    ->Alterar 'SigIn/index.js'
+      ->Importar { Form, Input } from '@rocketseat/unform';
+
+--Criar validações de dados no login
+  ->yarn add yup
+    ->importar * as Yup from 'yup' no 'SigIn/index.js'
+      ->Estilizar as mensagens de erro
+
+--CONFIGURAR REDUX E REDUX SAGA
+  ->yarn add redux redux-saga react-redux reactotron-redux
+    reactotron-redux-saga immer
+    ->Criar pasta 'store' em 'src'
+      ->Criar 'index.js'
+      ->Criar 'createStor.js'
+      ->Criar pasta 'modules'
+        ->'rootReducer.js'
+        ->'rootSaga.js'
+        ->Criar pasta 'auth'
+          ->'actions.js'
+          ->'reducer.js'
+          ->'sagas.js'
+        ->Configurar 'ReactototronConfig.js'
+        ->Configurar 'App.js'
+
+--Configurando Autenticação
+  ->Criar actions de autenticação
+  ->Configurar 'sagas.js'
+    ->yarn add axios
+      ->Criar 'api.js' em 'services'
+  ->Configurar 'SigIn/index.js'
+  ->Configurar 'reducer.js'
+  ->Configurar 'Route.js'
+
+--Armazenando infos do perfil logado
+  ->Criar novo módulo 'user'
+    ->'actions.js'
+    ->'reducer.js'
+    ->'sagas.js'
+      ->Configurar 'rootReducer.js' e 'rootSaga.js'
+
+--Persistindo autenticação
+  ->yarn add redux-persist
+    ->Criar arquivo 'persistReducer.js' em 'store'
+    ->Configurar 'store/index.js'
+    ->Configurar 'App.js'
+    ->Configurar 'Route.js'
+
+--Configurando loading da autenticação
+  ->Configurar o modulo 'auth'
+    ->'reducer.js'
+    ->'sagas.js'
+  ->Configurar o component 'SigIn'
+    ->'index.js'
+
+-Colocando mensagens de erro com o Toast
+  ->yarn add react-toastify
+    ->Importar { ToastContainer } em 'App.js'
+    ->Configurar 'styles/Global.js'
+    ->Importar { Toast } em 'auth/sagas.js'
+
+--Requisições autenticadas
+  ->Configurar 'auth/sagas.js'
+    ->api.defaults.headers.Authorization
+
+--Criação do Header
+  ->Criar pasta 'components' em 'src'
+    ->Criar pasta 'Header'
+      ->'index.js'
+      ->'styles.js'
+
+--Criação da tela de listagem de entregas
+  ->yarn add react-icons
+
+--Criação da tela de listagem de entregadores
+
