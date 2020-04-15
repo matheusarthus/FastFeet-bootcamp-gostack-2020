@@ -14,7 +14,6 @@ export default function Dashboard({ navigation }) {
   const dispatch = useDispatch();
 
   const [viewMode, setViewMode] = useState('pending');
-  /* const [cache, setCache] = useState(0); */
 
   const [page, setPage] = useState(1);
 

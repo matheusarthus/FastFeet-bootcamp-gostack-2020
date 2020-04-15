@@ -29,7 +29,7 @@ class OrderController {
       },
       limit,
       offset,
-      order: ['created_at'],
+      order: [['created_at', 'DESC']],
       attributes: ['id', 'product', 'start_date', 'end_date', 'canceled_at'],
       include: [
         {
