@@ -24,9 +24,13 @@ Para executar o back-end é preciso acessar, via terminal, a pasta `backend` e s
 
 **1.** Criar containers de Postgres e Redis no Docker, com o comando:
 
-`docker`
+`docker run --name db_fastfeet -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres`
 
-**2.** Startar bancos de dados no Docker, com o comando: 
+e
+
+`docker run --name redisfastfeet -p 6380:6379 -d -t redis:alpine`
+
+**2.** Iniciar bancos de dados no Docker, com o comando: 
 
 `docker start db_fastfeet redisfastfeet`
 
