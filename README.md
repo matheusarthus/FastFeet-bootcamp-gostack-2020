@@ -48,9 +48,9 @@ Para executar a aplicação Mobile você deve acessar, via terminal, a pasta `mo
 
 **1.** Configurar o arquivo `mobile/src/services/api.js` com ip correto (vide observações abaixo) para que a aplicação consiga acessar a api.
 
-**OBS.1:** Se você for rodar a aplicação no AndroidStudio, o ip deve ser `'10.0.0.2'`; se for no geneMotio, `'10.0.3.2'`; e se for com o aparelho físico via usb, deve ser o ip da sua máquina.
+**Obs1:** Se você for rodar a aplicação no AndroidStudio, o ip deve ser `'10.0.0.2'`; se for no geneMotion, `'10.0.3.2'`; e se for com o aparelho físico via usb, deve ser o ip da sua máquina.
 
-**OBS.2:** Se a aplicação não estiver conseguindo acessar a api, faça o remapeamento de porta com o comando: `adb reverse tcp:3334 tcp:3334`.
+**Obs2:** Se a aplicação não estiver conseguindo acessar a api, faça o remapeamento de porta com o comando: `adb reverse tcp:3334 tcp:3334`.
 
 **2.** Agora rode o Metro Bundler com o comando `yarn start`.
 
