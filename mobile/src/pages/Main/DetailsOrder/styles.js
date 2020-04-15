@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
+  flex: 1;
   background: #fff;
 `;
 
@@ -10,14 +11,15 @@ export const Background = styled.View`
   width: 100%;
 `;
 
-export const ExtraContainer = styled.ScrollView`
+export const ExtraContainer = styled.View`
   top: -90px;
+  padding: 0 20px;
 `;
 
 export const ContentInfo = styled.View`
   background-color: #fff;
-  width: 335px;
-  height: 200px;
+  width: 100%;
+  min-height: 210px;
   align-self: center;
   border-radius: 4px;
   padding: 12px;
@@ -87,8 +89,8 @@ export const Product = styled.Text`
 
 export const ContentStatus = styled.View`
   background-color: #fff;
-  width: 335px;
-  height: 140px;
+  width: 100%;
+  min-height: 140px;
   align-self: center;
   border-radius: 4px;
   padding: 12px;
@@ -156,10 +158,9 @@ export const DeliveredDate = styled.Text`
 `;
 
 export const ContainerButtons = styled.View`
-  flex: 1;
   background-color: #0000001a;
-  width: 335px;
-  height: 80px;
+  width: 100%;
+  min-height: 80px;
   align-self: center;
   border-radius: 4px;
   padding: 2px;

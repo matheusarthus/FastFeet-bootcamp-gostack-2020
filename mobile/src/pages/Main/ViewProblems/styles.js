@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   background: #fff;
-  height: 100%;
+  flex: 1;
   align-items: center;
 `;
 
@@ -24,7 +24,7 @@ export const ProblemsList = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
   top: -55px;
-  width: 335px;
+  width: 90%;
 `;
 
 export const EmptyText = styled.Text`

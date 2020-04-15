@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 import Button from '~/components/Button';
 
 export const Container = styled.View`
+  flex: 1;
   background: #fff;
 `;
 
@@ -16,7 +17,7 @@ export const Form = styled.View`
   top: -70px;
   align-self: center;
   border-radius: 4px;
-  width: 335px;
+  width: 90%;
 `;
 
 export const Input = styled.TextInput.attrs({

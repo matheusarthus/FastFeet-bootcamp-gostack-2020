@@ -14,7 +14,7 @@ export const Container = styled.View`
 `;
 
 export const DivDescription = styled.Text`
-  width: 80%;
+  width: 70%;
 `;
 
 export const Description = styled.Text`

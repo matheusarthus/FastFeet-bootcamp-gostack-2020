@@ -46,8 +46,8 @@ export default function ConfirmOrder({ route }) {
         <RNCamera
           ref={camera}
           style={{
-            height: 344,
-            width: 235,
+            width: 335,
+            height: 445,
             marginLeft: 1,
             marginRight: 1,
             marginTop: 1,

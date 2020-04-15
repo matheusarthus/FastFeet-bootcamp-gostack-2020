@@ -114,6 +114,9 @@ export default function createRouter(isSigned = false) {
   ) : (
     <Tab.Navigator
       tabBarOptions={{
+        safeAreaInsets: {
+          bottom: 25, // No Moto G8 Plus a barra virtual do Android ficava em cima da TabBar
+        },
         activeTintColor: '#7D40E7',
         inactiveTintColor: '#999',
         style: {

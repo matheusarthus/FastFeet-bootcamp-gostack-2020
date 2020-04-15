@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 import Button from '~/components/Button';
 
 export const Container = styled.View`
+  flex: 1;
   background: #fff;
 `;
 
@@ -13,20 +14,15 @@ export const Background = styled.View`
 `;
 
 export const CameraContainer = styled.View`
+  flex: 1;
   position: absolute;
   top: 70px;
   align-self: center;
-  background: #fff;
   width: 335px;
-  height: 420px;
+  height: 510px;
   border-radius: 2px;
 `;
 
 export const SendButton = styled(Button)`
   background: #7d40e7;
-`;
-
-export const Photo = styled.Image`
-  width: 145px;
-  height: 145px;
 `;

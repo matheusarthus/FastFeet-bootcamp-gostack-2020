@@ -54,7 +54,7 @@ export default function Header({ viewMode, setViewMode }) {
           </TextContainer>
         </Content>
         <LogoutButton onPress={handleLogout}>
-          <Icon name="exit-to-app" size={20} color="#E74040" />
+          <Icon name="exit-to-app" size={25} color="#E74040" />
         </LogoutButton>
       </Top>
       <Bottom>

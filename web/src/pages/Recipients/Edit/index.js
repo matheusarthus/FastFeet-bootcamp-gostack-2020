@@ -188,8 +188,6 @@ export default function RecipientsEdit() {
           </div>
         </div>
       </FormRecipientEdit>
-      <h1>EU AMO A RAPHAELLA</h1>
-      <h2>by Sbuck</h2>
     </Container>
   );
 }

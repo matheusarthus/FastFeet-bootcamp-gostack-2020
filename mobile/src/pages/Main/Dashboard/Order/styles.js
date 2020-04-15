@@ -1,12 +1,12 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  margin-top: 5px;
-  width: 335px;
-  height: 170px;
-  background: #0000001a;
+  margin-bottom: 10px;
+  min-width: 335px;
+  height: 181px;
+  background: #fff;
+  border: 2px solid #0000001a;
   border-radius: 4px;
-  padding: 2px;
 `;
 
 export const Top = styled.View`
@@ -62,13 +62,13 @@ export const Circle3 = styled.View`
 `;
 
 export const Line1 = styled.View`
-  width: 121px;
+  width: 45%;
   height: 2px;
   background: #7d40e7;
 `;
 
 export const Line2 = styled.View`
-  width: 121px;
+  width: 46%;
   height: 2px;
   background: #7d40e7;
 `;
