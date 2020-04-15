@@ -20,9 +20,9 @@ As tecnologias utilizadas no desenvolvimento, foram: Node.js, ReactJS e React Na
 
 ## Back-end
 
-Para executar o back-end é preciso acessar, via terminal, a pasta 'backend' e seguir os seguintes passos:
+Para executar o back-end é preciso acessar, via terminal, a pasta `backend` e seguir os seguintes passos:
 
-**1.** Criar novos containers de Postgres e Redis no Docker, com o comando:
+**1.** Criar containers de Postgres e Redis no Docker, com o comando:
 
 `docker`
 
@@ -32,20 +32,18 @@ Para executar o back-end é preciso acessar, via terminal, a pasta 'backend' e s
 
 **3.** Gerar as tabelas no banco de dados, através das migrations e seeds do Sequelize, com os comandos:
 
-`yarn sequelize db:migrate`
+`yarn sequelize db:migrate` e `yarn sequelize db:seed:all`
 
-e
-
-`yarn sequelize db:seed:all`
-
-**4.** Configurar o MailTrap no arquivo 'src/config/mail.js' com o 'user' e 'pass' da sua conta.
+**4.** Configurar o MailTrap no arquivo `src/config/mail.js` com o `user` e `pass` da sua conta.
 
 **5.** Finalmente, executar o comando `yarn dev` para rodar a api.
 
 ## Web
 
-Esse desafio **não precisa ser entregue** e não receberá correção. Além disso, o código fonte **não está disponível** por fazer parte do **desafio final**, que será corrigido para **certificação** do bootcamp. Após concluir o desafio, adicionar esse código ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
+Para executar a aplicação web você deve acessar a pasta `web` e executar:
 
-## Mobile
+`yarn start`
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+## Mobile (somente Android)
+
+Para executar a aplicação Mobile você deve acessar a pasta `mobile`:
