@@ -3,30 +3,10 @@
 </h1>
 
 <h3 align="center">
-  Desafio 10: FastFeet, mobile
+  FastFeet 
 </h3>
 
-<h3 align="center">
-  :warning: Etapa 4/4 do Desafio Final :warning:
-</h3>
-
-<p>Esse desafio faz parte do Desafio Final, que é uma aplicação completa (Back-end, Front-end e Mobile) que é avaliada para emissão do Certificado do Bootcamp GoStack, por isso é fundamental que ele seja feito com muito empenho!</p>
-
-<blockquote align="center">“O tempo que leva para realizar seus sonhos vai passar de qualquer forma”!</blockquote>
-
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-10?color=%2304D361" />
-
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361" />
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
-
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-10/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-10?style=social" />
-  </a>
-</p>
+<p>Esse projeto é o Desafio Final para emissão do Certificado do Bootcamp GoStack, que é uma aplicação completa (Back-end, Front-end e Mobile) de gerenciamento logístico de uma transportadora fictícia chamada FastFeet.</p>
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
