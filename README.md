@@ -10,17 +10,37 @@
 
 ## Sobre o desafio
 
-Durante esse desafio vamos construir o app mobile da aplicação FastFeet que criamos o back-end durante os desafios dos módulos 02 e 03 de Node.js e front-end no desafio do módulo 09 de ReactJS.
+FastFeet é uma aplicação de logística, feito com o intuíto de auxiliar no gerenciamento e no controle das entregas de encomendas.
 
-A versão mobile do projeto FastFeet representa a visão do entregador, ou seja, todas funcionalidades presentes nesse projeto são para entregadores.
+Esse auxílio é feito através de ferramentas que permitem, ao administrador, o cadastro de entregadores, destinatários e encomendas; a associação destas encomendas aos entregadores que, por sua vez, administram suas entregas através do aplicativo mobile; e o gerenciamento dos problemas ocorridos nas entregas possibilitando, eventualmente, o cancelamento das mesmas.
+
+No aplicativo mobile, o entregador tem acesso às encomendas atribudas a ele (pendenetes e já concludas); tem os recursos de confirmação de retirada de encomenda e de entrega conclúida (atestada por uma foto da assinatura do destinatário); e, também, a possibilidade de cadastrar um problema com uma entrega especfica e visualizar o histórico de problemas atribuídos.
+
+As tecnologias utilizadas no desenvolvimento, foram: Node.js, ReactJS e React Native.
 
 ## Back-end
 
-O layout do desafio está em anexo como um arquivo `.xd`.
+Para executar o back-end é preciso acessar, via terminal, a pasta 'backend' e seguir os seguintes passos:
 
-Caso esteja usando OS X / Windows você pode abrir esse utilizando o Adobe Xd.
+**1.** Criar novos containers de Postgres e Redis no Docker, com o comando:
 
-Caso contrário, você pode utilizar a seguinte URL para visualizar todas as telas: [Visualizar](https://xd.adobe.com/view/a5d56d7d-c1d4-48a8-70ce-8b77f5f417a5-d3e4/grid).
+`docker`
+
+**2.** Startar bancos de dados no Docker, com o comando: 
+
+`docker start db_fastfeet redisfastfeet`
+
+**3.** Gerar as tabelas no banco de dados, através das migrations e seeds do Sequelize, com os comandos:
+
+`yarn sequelize db:migrate`
+
+e
+
+`yarn sequelize db:seed:all`
+
+**4.** Configurar o MailTrap no arquivo 'src/config/mail.js' com o 'user' e 'pass' da sua conta.
+
+**5.** Finalmente, executar o comando `yarn dev` para rodar a api.
 
 ## Web
 
