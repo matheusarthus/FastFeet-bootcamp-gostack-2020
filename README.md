@@ -20,7 +20,8 @@ As tecnologias utilizadas no desenvolvimento, foram: **Node.js**, **ReactJS** e 
 
 <p align="center">
   <img alt="Fastfeet" title="Fastfeet" src=".github/fastfeet.gif" width="270px" height="570px" />
-  <img alt="Fastfeet2" title="Fastfeet2" src=".github/fastfeet2.gif" 
+  <img alt="Fastfeet2" title="Fastfeet2" src=".github/fastfeet2.gif" width="270px" height="570px" />
+</p>
 
 <p align="center">
   <img alt="Fastfeet_web" title="Fastfeet_web" src=".github/fastfeet_web.png" width="100%" />
