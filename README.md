@@ -33,7 +33,7 @@ As tecnologias utilizadas no desenvolvimento, foram: **Node.js**, **ReactJS** e 
 
 Para executar o back-end é preciso acessar, via terminal, a pasta `backend` e seguir os seguintes passos:
 
-**1.** Criar containers de Postgres e Redis no Docker, com o comando:
+**1.** Criar containers de Postgres e Redis no Docker, com os comandos:
 
 `docker run --name db_fastfeet -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres`
 
@@ -67,7 +67,7 @@ Para executar a aplicação Mobile você deve acessar, via terminal, a pasta `mo
 
 **Obs2:** Se a aplicação não estiver conseguindo acessar a api, faça o remapeamento de porta com o comando: `adb reverse tcp:3334 tcp:3334`.
 
-**2.** Agora rode o Metro Bundler com o comando `yarn start`.
+**2.** Agora rode o Metro Bundler com o comando `yarn start --reset-cache`.
 
 **3.** Em outra aba do terminal, instale a aplicação com o comando `react-native run-android`.
 
