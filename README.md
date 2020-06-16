@@ -19,13 +19,14 @@ No aplicativo mobile, o entregador tem acesso às encomendas atribudas a ele (pe
 As tecnologias utilizadas no desenvolvimento, foram: **Node.js**, **ReactJS** e **React Native**.
 
 <p align="center">
-  <img alt="Fastfeet_mobile1" title="Fastfeet_mobile1" src=".github/fastfeet_mobile1.png" width="270px" height="570px" />
-  <img alt="Fastfeet_mobile2" title="Fastfeet_mobile2" src=".github/fastfeet_mobile2.png" width="270px" height="570px" />
-  <img alt="Fastfeet_mobile3" title="Fastfeet_mobile3" src=".github/fastfeet_mobile3.png" width="270px" height="570px" />
-</p>
+  <img alt="Fastfeet_mobile1" title="Fastfeet_mobile1" src=".github/fastfeet.gif" width="270px" height="570px" />
+  <img alt="Fastfeet_mobile2" title="Fastfeet_mobile2" src=".github/fastfeet2.gif" 
 
 <p align="center">
   <img alt="Fastfeet_web" title="Fastfeet_web" src=".github/fastfeet_web.png" width="100%" />
+</p>
+<p align="center">
+  <img alt="Fastfeet_web2" title="Fastfeet_web" src=".github/fastfeet_web.png" width="100%" />
 </p>
 
 ## Back-end
