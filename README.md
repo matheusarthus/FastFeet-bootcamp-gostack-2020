@@ -16,7 +16,15 @@ Esse auxílio é feito através de ferramentas que permitem, ao administrador, o
 
 No aplicativo mobile, o entregador tem acesso às encomendas atribudas a ele (pendentes e já concluídas); tem os recursos de confirmação de retirada de encomenda e de entrega conclúida (atestada por uma foto da assinatura do destinatário); e, também, a possibilidade de cadastrar um problema com uma entrega especfica e visualizar o histórico de problemas atribuídos.
 
-As tecnologias utilizadas no desenvolvimento, foram: **Node.js**, **ReactJS** e **React Native**.
+## Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+- [React Native](https://facebook.github.io/react-native/)
+
+## Resultado:
 
 <p align="center">
   <img alt="Fastfeet" title="Fastfeet" src=".github/fastfeet.gif" width="270px" height="570px" />
