@@ -26,10 +26,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Resultado:
 
+MOBILE:
+
 <p align="center">
   <img alt="Fastfeet" title="Fastfeet" src=".github/fastfeet.gif" width="270px" height="570px" />
   <img alt="Fastfeet2" title="Fastfeet2" src=".github/fastfeet2.gif" width="270px" height="570px" />
 </p>
+
+WEB:
 
 <p align="center">
   <img alt="Fastfeet_web" title="Fastfeet_web" src=".github/fastfeet_web.png" width="100%" />
